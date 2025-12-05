@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { InfoIcon, Mail } from "lucide-react";
+import { CodeXml, InfoIcon, Mail } from "lucide-react";
 
 function Navbar() {
   return (
@@ -19,17 +19,17 @@ function Navbar() {
             </Link>
           </li>
 
-          {/*<li>*/}
-          {/*  <Link*/}
-          {/*    to="/projects"*/}
-          {/*    className="hover:text-blue-600 transition-colors duration-200"*/}
-          {/*  >*/}
-          {/*    <div className="mx-auto flex gap-1 items-center">*/}
-          {/*      <CodeXml size={18} />*/}
-          {/*      Projects*/}
-          {/*    </div>*/}
-          {/*  </Link>*/}
-          {/*</li>*/}
+          <li>
+            <Link
+              to="/projects"
+              className="hover:text-blue-600 transition-colors duration-200"
+            >
+              <div className="mx-auto flex gap-1 items-center">
+                <CodeXml size={18} />
+                Projects
+              </div>
+            </Link>
+          </li>
 
           <li>
             <Link

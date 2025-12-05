@@ -1,8 +1,7 @@
 function Projects() {
   const projects = [
-    { name: "Dashboard App", link: "#" },
-    { name: "UI Clone", link: "#" },
-    { name: "Portfolio Website", link: "#" },
+    { name: "Portfolio", link: "https://github.com/mkrizea/portfolio" },
+    { name: "ToDo List", link: "https://github.com/mkrizea/todo-list" },
   ];
 
   return (
@@ -14,6 +13,7 @@ function Projects() {
             key={project.name}
             href={project.link}
             className="p-6 bg-white rounded-xl shadow hover:shadow-lg transition"
+            target="_blank"
           >
             {project.name}
           </a>
