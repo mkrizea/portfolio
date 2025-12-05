@@ -1,16 +1,23 @@
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Projects from "./components/Projects";
+// import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import About from "./components/About.tsx";
 
 function App() {
   return (
-    <div className="bg-gray-100 min-h-screen">
-      <Navbar />
-      <Hero />
-      <Projects />
-      <Contact />
-    </div>
+    <Router>
+      <div className="bg-gray-100 min-h-screen">
+        <Navbar />
+        <div className="pt-22 pb-4">
+          <Routes>
+            <Route path="/" element={<About />} />
+            {/*<Route path="/projects" element={<Projects />} />*/}
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </div>
+      </div>
+    </Router>
   );
 }
 

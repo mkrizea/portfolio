@@ -6,14 +6,14 @@ function Projects() {
   ];
 
   return (
-    <section className="py-10 px-10">
+    <section className="px-10 text-center">
       <h2 className="text-3xl font-bold mb-8">Projects</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {projects.map((project) => (
           <a
             key={project.name}
             href={project.link}
-            className="p-6 bg-white rounded shadow hover:shadow-lg transition"
+            className="p-6 bg-white rounded-xl shadow hover:shadow-lg transition"
           >
             {project.name}
           </a>
