@@ -2,6 +2,7 @@ function Projects() {
   const projects = [
     { name: "Portfolio", link: "https://github.com/mkrizea/portfolio" },
     { name: "ToDo List", link: "https://github.com/mkrizea/todo-list" },
+    { name: "Blog App", link: "https://github.com/mkrizea/blog-app" },
   ];
 
   return (
